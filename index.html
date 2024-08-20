@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Ejercicio 1</title>
+  </head>
+  <body>
+        
+        <div class="box" id="contenido" >
+            <form action="https://formsubmit.co/matias.ds.soto@gmail.com" method="post">
+              <h1 class="titulo">Formulario de Datos Personales</h1>
+              <br><br>
+              
+                <div class="box-content">
+                  <label for="first-name">Nombre:</label>
+                  <br />
+                  <input id="first-name" type="text" name="first-name" placeholder="Escribe tu nombre" required pattern="[A-Za-zÀ-ÿ]{2,12}" minlength="2" maxlength="12" title="Por favor, ingresa un nombre de entre 2 y 12 letras, usando solo caracteres válidos."/>
+                  <br /><br />
+                  <label for="last-name">Apellido: </label>
+                  <br />
+                  <input id="last-name" type="text" name="last-name"  placeholder="Escribe tu apellido" required pattern="[A-Za-zÀ-ÿ]{2,12}" minlength="2" maxlength="12" title="Por favor, ingresa un apellido de entre 2 y 12 letras, usando solo caracteres válidos."/>
+                  <br /><br />
+                  <label for="email">Email:</label>
+                  <br />
+                  <input id="email" type="email" name="email" placeholder="Escribe tu correo" required pattern=".*@.*" title="Por favor, ingrese un correo válido"/>
+
+                  <br /><br />
+                  <label for="dob">Fecha de Nacimiento:</label>
+                  <br />
+                  <input id="dob" type="date" name="dob" />
+                  <br /><br />
+                  <label for="country">País de Residencia:</label>
+                  <br />
+                  <input id="country" type="text" name="country" placeholder="Escribe el país donde resides" required pattern="[A-Za-zÀ-ÿ]{2,12}"  minlength="2" maxlength="12" title="El país no debe contener números"/>
+                  <br /><br />
+                  
+                  
+                  
+                  
+                    <button id="enviarForm" type="submit" class="btn-enviar">Enviar</button>
+                 
+                  
+                  <br />
+                </div>
+              
+            </form>
+            
+          </div> 
+      
+
+  </body>
+</html>
