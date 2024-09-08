@@ -1,22 +1,117 @@
-body {
+html, body {
     margin: 0;
-    height: 100vh;
-    display: grid;
-    place-items: center;
-}
-
-.titulo {
+    height: 100%;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+  }
+  
+  header, footer {
+    background-color: #FE7F2D;
+    color: #ffffff;
+  }
+  
+  header {
+    padding: 1rem 2rem;
+  }
+  
+  header .navbar-nav .nav-link {
+    color: #ffffff !important;
+  }
+  
+  header .navbar-brand img {
+    height: 40px;
+  }
+  
+  main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  footer {
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  footer .container-fluid {
+    padding: 0;
+  }
+  
+  .titulo {
     color: black;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-.btn-primary {
-    background-color: coral;
-    border-color: coral;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+  
+  .btn-primary {
+    background-color: #FCCA46;
+    border-color: #FCCA46;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
-}
-
-.form-control {
+    color: black;
+  }
+  
+  .form-control {
     border-radius: 0.25rem;
-}
+  }
+  
+  /* Media Queries para hacerlo responsive */
+  
+  @media (max-width: 1200px) {
+    /* Estilos para pantallas medianas, como tablets */
+    header, footer {
+      padding: 1rem;
+    }
+  
+    header .navbar-brand img {
+      height: 35px;
+    }
+  
+    main {
+      padding: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    /* Estilos para pantallas pequeñas, como móviles */
+    header {
+      padding: 0.5rem 1rem;
+    }
+  
+    header .navbar-brand img {
+      height: 30px;
+    }
+  
+    main {
+      padding: 1rem;
+    }
+  
+    .container {
+      padding: 0;
+    }
+  
+    footer {
+      padding: 0.5rem;
+    }
+  
+    .titulo {
+      font-size: 1.5rem; /* Ajustar el tamaño del título */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    /* Estilos para móviles aún más pequeños */
+    .titulo {
+      font-size: 1.2rem;
+    }
+  
+    .btn-primary {
+      font-size: 0.9rem;
+    }
+  }
+  
