@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Ejercicio 1</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="./index.html">
+          <img
+            src="https://img.freepik.com/free-vector/colorful-bird-illustration-gradient_343694-1741.jpg?t=st=1725837573~exp=1725841173~hmac=679be726732dbbcbe6a9baf26c0d0a65e8abc6546416a206fa1eb4fe6877630e&w=740"
+            alt="Logo"
+            style="height: 13vh; width: auto; border-radius: 45%"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./form.html">Formulario</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+
+    <main>
+      <section>
+        <div class="container d-flex justify-content-center align-items-center">
+          <form
+            action="https://formsubmit.co/matias.ds.soto@gmail.com"
+            method="post"
+            class="bg-light p-4 rounded border"
+          >
+            <h1 class="titulo text-center mb-4">
+              Formulario de Datos Personales
+            </h1>
+            <div class="form-group">
+              <label for="first-name">Nombre:</label>
+              <input
+                id="first-name"
+                type="text"
+                name="first-name"
+                class="form-control"
+                placeholder="Escribe tu nombre"
+                required
+                pattern="^[A-Za-zÀ-ÿ\s'-]{2,22}$"
+                minlength="2"
+                maxlength="22"
+                title="Por favor, ingresa un nombre de entre 2 y 22 letras, usando solo caracteres válidos."
+              />
+            </div>
+            <div class="form-group">
+              <label for="last-name">Apellido:</label>
+              <input
+                id="last-name"
+                type="text"
+                name="last-name"
+                class="form-control"
+                placeholder="Escribe tu apellido"
+                required
+                pattern="^[A-Za-zÀ-ÿ\s'-]{2,22}$"
+                minlength="2"
+                maxlength="22"
+                title="Por favor, ingresa un apellido de entre 2 y 22 letras, usando solo caracteres válidos."
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input
+                id="email"
+                type="email"
+                name="email"
+                class="form-control"
+                placeholder="Escribe tu correo"
+                required
+                title="Por favor, ingrese un correo válido"
+              />
+            </div>
+            <div class="form-group">
+              <label for="dob">Fecha de Nacimiento:</label>
+              <input id="dob" type="date" name="dob" class="form-control" />
+            </div>
+            <div class="form-group">
+              <label for="country">País de Residencia:</label>
+              <input
+                id="country"
+                type="text"
+                name="country"
+                class="form-control"
+                placeholder="Escribe el país donde resides"
+                required
+                pattern="^[A-Za-zÀ-ÿ\s'-]{2,12}$"
+                minlength="2"
+                maxlength="12"
+                title="El país no debe contener números"
+              />
+            </div>
+            <div class="form-group">
+              <label for="comments">Comentarios:</label>
+              <textarea
+                id="comments"
+                name="comments"
+                class="form-control"
+                rows="4"
+                placeholder="Escribe tus comentarios aquí"
+                minlength="10"
+                maxlength="500"
+                required
+                title="Por favor, ingresa un comentario de entre 10 y 500 caracteres."
+              ></textarea>
+            </div>
+
+            <button
+              id="enviarForm"
+              type="submit"
+              class="btn btn-primary w-100 mb-2"
+            >
+              Enviar
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container-fluid">
+        <p class="mb-1">
+          © 2024. Todos los derechos reservados.
+        </p>
+        <p class="mb-0">
+          Síguenos en
+          <a href="#" class="text-white">Facebook</a>,
+          <a href="#" class="text-white">Twitter</a>,
+          <a href="#" class="text-white">Instagram</a>
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
